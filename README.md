@@ -425,19 +425,19 @@ Just like with the `SelectCharacter` Component, let's create a new file in the `
 **Check comments in `src/Components/LoadingIndicator/index.js`!!!**
 
 # Images
-<img src="https://i.imgur.com/6OrDtDD.png">
+<img src="https://i.imgur.com/18uKuco.png">
 
-<img src="https://i.imgur.com/Ckx8AjY.png">
+<img src="https://i.imgur.com/7G8nNsR.png">
 
-<img src="https://i.imgur.com/2Mf0lEz.png">
+<img src="https://i.imgur.com/nzyX34O.png">
 
-<img src="https://imgur.com/Ci4gQ1Q">
+<img src="https://i.imgur.com/Jdlffzr.png">
 
-<img src="https://i.imgur.com/iyMPDLM.png">
+<img src="https://i.imgur.com/Xbu7rDq.png">
 
-<img src="https://i.imgur.com/Qa2Tjml.png">
+<img src="https://i.imgur.com/Iq0ULbi.png">
 
-<img src="https://i.imgur.com/yTAJQuv.png">
+<img src="https://i.imgur.com/p3Pu3VY.png">
 
 Contract link on Etherscan deployed on Rinkeby Testnet: https://rinkeby.etherscan.io/address/0xcd22a5Ee85ACa288cc59504fe4c623a833dcaEf9
 
