@@ -35,6 +35,20 @@
   color: white;
 }
 
+.sub-text-address {
+  font-size: 20px;
+  color: white;
+}
+
+.address-text{
+  color: #005DFF;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
 .content-container {
   background-color: #a200d6;
 }

@@ -23,6 +23,7 @@
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .boss-container .boss-content {

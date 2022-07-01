@@ -11,6 +11,7 @@ import LoadingIndicator from './Components/LoadingIndicator';
 // Constants
 const TWITTER_HANDLE = 'dakshp07';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+const ADD_LINK="https://rinkeby.etherscan.io/address/";
 
 const App = () => {
   // state variables for checking user accounts
@@ -49,6 +50,7 @@ const App = () => {
           console.log('No authorized account found');
         }
       }
+      checkNetwork();
     }
     catch(error)
     {
@@ -111,23 +113,24 @@ const App = () => {
     }
   }
 
+  // check the network
+  const checkNetwork=async()=>{
+    try{
+      if(window.ethereum.networkVersion!=='4')
+      {
+        alert("Please connect to Rinkeby!")
+      }
+    }
+    catch(error)
+    {
+      console.log(error);
+    }
+  }
+
   useEffect(()=>{
     checkIfWalletIsConnected();
     // Anytime our component mounts, make sure to immiediately set our loading state
     setIsLoading(true);
-    // check the network
-    const checkNetwork=async()=>{
-      try{
-        if(window.ethereum.networkVersion!=='4')
-        {
-          alert("Please connect to Rinkeby!")
-        }
-      }
-      catch(error)
-      {
-        console.log(error);
-      }
-    }
   }, []);
 
   useEffect(()=>{
@@ -164,6 +167,8 @@ const App = () => {
         <div className="header-container">
           <p className="header gradient-text">Epic ⚔️ Game ⚔️ Slayer</p>
           <p className="sub-text">Team up to protect the Epic Metaverse!</p>
+          {(currentAccount!=null) && (<div><p className='sub-text-address'>Wallet Address: </p>
+          <a className="address-text" href={ADD_LINK+currentAccount}>{currentAccount}</a></div>)}
           {/* This is where our button and image code used to be!
            *	Remember we moved it into the render method.
           */}
